@@ -1,0 +1,13 @@
+@import "../variables";
+
+.navigation__link {
+  padding-right: 3rem;
+  color: $border-default;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+    transition: color 0.5s ease 0s;
+  }
+}

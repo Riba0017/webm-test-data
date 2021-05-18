@@ -1,0 +1,10 @@
+mixin link(href, name)
+    li
+        a(href=href)&attributes(attributes)= name
+
+nav.navigation
+    ul.navigation__list
+        +link('#', 'navlink1')(class='navigation__link')
+        +link('#', 'navlink2')(class='navigation__link')
+        +link('#', 'navlink3')(class='navigation__link')
+        +link('#', 'navlink4')(class='navigation__link')
