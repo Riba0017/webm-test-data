@@ -1,0 +1,46 @@
+{
+  "name": "webm-test-data",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riba0017/webm-test-data.git"
+  },
+  "author": "Riba0017 (Riba0017@yandex.ru)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Riba0017/webm-test-data/issues"
+  },
+  "homepage": "https://github.com/Riba0017/webm-test-data#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.2",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
