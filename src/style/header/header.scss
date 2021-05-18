@@ -1,0 +1,10 @@
+@import "../variables";
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 10rem;
+  padding: 0 $padding-default;
+  background-color: mistyrose;
+}
