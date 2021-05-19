@@ -1,0 +1,14 @@
+.footer__address {
+  position: relative;
+  margin-left: 3rem;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2.5rem;
+    background: url("/images/icons-sprite.png") 85% center no-repeat;
+  }
+}

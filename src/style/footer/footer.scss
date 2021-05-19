@@ -1,0 +1,19 @@
+@import "../variables";
+@import "_title";
+@import "_contacts";
+@import "_info";
+@import "_text";
+@import "_address";
+@import "_phone";
+@import "_socials";
+@import "_social-link";
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 24.3rem;
+  padding: 4rem $padding-default 2.5rem;
+  color: $black-default;
+  background-color: $white-default;
+  box-sizing: border-box;
+}

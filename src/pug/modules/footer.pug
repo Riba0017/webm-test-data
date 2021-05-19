@@ -1,0 +1,17 @@
+mixin social
+    li
+        a(href='#' class='footer__social-link')&attributes(attributes)
+
+footer.footer
+    .footer__info
+        h3.footer__title Logo / Company Name
+        address.footer__contacts
+            p.footer__address  Company Adress: Lorem ipsum dolor sit amet, 18600, Netherlands
+            a(href='tel:8000000000' class='footer__phone') +38 958 755-00-00
+        ul.footer__socials
+            +social(class='footer__social-link--fb')
+            +social(class='footer__social-link--inst')
+            +social(class='footer__social-link--tw')
+            +social(class='footer__social-link--ytb')
+    .footer__text
+        p.footer__paragraph Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quos ullam atque accusantium ratione molestias soluta, provident nobis, assumenda dolorum voluptas incidunt inventore quia reiciendis quis. Quis quo molestias repellat.
