@@ -42,12 +42,10 @@ module.exports = {
     entry: './index.js',
     output: {
         filename: `./${filename('js')}`,
-        path: path.resolve(__dirname, 'app'),
-        publicPath: ''
+        path: path.resolve(__dirname, 'app')
     },
     devServer: {
         historyApiFallback: true,
-        contentBase: path.resolve(__dirname, 'app'),
         open: true,
         compress: true,
         hot: true,
@@ -93,12 +91,7 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/,
                 use: [{
-                    loader: MiniCssExtractPlugin.loader,
-                    options: {
-                        publicPath: (resourcePath, context) => {
-                            return path.relative(path.dirname(resourcePath), context);
-                        }
-                    }
+                    loader: MiniCssExtractPlugin.loader
                 },
                     'css-loader',
                     'sass-loader'
@@ -110,15 +103,6 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         name: `./images/${filename('[ext]')}`
-                    }
-                }]
-            },
-            {
-                test: /\.(?:|woff2)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: `./fonts/${filename('[ext]')}`
                     }
                 }]
             },
