@@ -1,7 +1,11 @@
+- let data = require('../../../data');
+
 doctype html
 html(lang='en')
     head
-        title Test Task
+        title #{data.page_meta.title}
+        meta(name='keywords' content= data.page_meta.meta_keywords)
+        meta(name='description' content= data.page_meta.meta_description)
     body
         include ../modules/header
         include ../modules/navigation
