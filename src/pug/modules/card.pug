@@ -1,0 +1,20 @@
+- let data = require('../../../data');
+
+each item in data.stock
+    div.card
+        img.card__image(src=`../../images/${item.image}` alt=`${item.make} ${item.model}`)
+        div.card__content
+            h3.card__title #{item.title}
+            ul.card__list
+                li.card__char Model: #{item.model}
+                li.card__char Type: #{item.type}
+                li.card__char Payload: #{item.payload}
+                li.card__char Gross weight: #{item.gross_weight}
+            div.card__features
+                span.card__feature #{item.year}
+                span.card__feature #{item.mileage} #{item.mileage_measure}
+                span.card__feature #{item.axle_configuration}
+                span.card__feature #{item.power} #{item.power_measure}
+        div.card__info
+            span.card__currency #{item.price_currency} &nbsp;
+            span.card__price #{item.price}

@@ -1,3 +1,7 @@
+- let data = require('../../../data');
 
 div.catalog
     h2.catalog__heading Catalog Heading
+    include ../modules/card
+    each val in data.page_text
+        #{val.tag}(class='catalog__text')= val.content
