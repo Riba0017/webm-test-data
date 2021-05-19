@@ -9,7 +9,7 @@
     transition: color 0.5s ease 0s;
   }
 
-  &::after {
+  &:not(:last-of-type)::after {
     content: '>';
     display: inline-block;
     margin: 0 1rem;
