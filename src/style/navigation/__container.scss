@@ -1,0 +1,10 @@
+@import "../variables";
+
+.navigation__container {
+  display: flex;
+  min-height: 5rem;
+  max-width: 114rem;
+  padding: $padding-default;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

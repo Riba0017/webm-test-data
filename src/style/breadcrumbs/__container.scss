@@ -1,0 +1,12 @@
+@import "../variables";
+
+.breadcrumbs__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 114rem;
+  min-height: 4rem;
+  padding: 0 $padding-default;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

@@ -1,0 +1,13 @@
+@import "../variables";
+
+.footer__container {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 24.3rem;
+  max-width: 114rem;
+  padding: 4rem $padding-default 2.5rem;
+  margin: 0 auto;
+  color: $black-default;
+  box-sizing: border-box;
+}

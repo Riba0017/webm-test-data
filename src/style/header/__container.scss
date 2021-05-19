@@ -1,0 +1,13 @@
+@import "../variables";
+
+.header__container {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 10rem;
+  max-width: 114rem;
+  padding: 0 $padding-default;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

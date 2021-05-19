@@ -1,12 +1,9 @@
 @import "../variables";
+@import "_container";
 @import "_list";
 @import "_link";
 
 .navigation {
-  display: flex;
-  min-height: 5rem;
   margin-top: 2rem;
-  padding: $padding-default;
   background-color: $white-default;
-  box-sizing: border-box;
 }

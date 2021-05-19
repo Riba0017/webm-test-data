@@ -1,4 +1,5 @@
 @import "../variables";
+@import "_container";
 @import "_title";
 @import "_contacts";
 @import "_info";
@@ -9,12 +10,5 @@
 @import "_social-link";
 
 .footer {
-  flex: 0 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-  min-height: 24.3rem;
-  padding: 4rem $padding-default 2.5rem;
-  color: $black-default;
   background-color: $white-default;
-  box-sizing: border-box;
 }

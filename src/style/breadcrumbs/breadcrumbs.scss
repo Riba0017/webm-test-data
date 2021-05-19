@@ -1,12 +1,8 @@
 @import "../variables";
+@import "_container";
 @import "_link";
 @import "_item";
 
 .breadcrumbs {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 $padding-default;
-  height: 4rem;
   background-color: transparent;
 }
