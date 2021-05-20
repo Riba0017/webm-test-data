@@ -9,12 +9,19 @@
 @import "_button";
 
 .filter {
-  width: 27rem;
-  height: auto;
-  margin-right: 2rem;
-  padding: $padding-default;
-  background-color: $white-default;
-  box-sizing: border-box;
+  @media (min-width: $layout-breakpoint-small) {
+    width: 100%;
+    height: auto;
+    margin-right: 2rem;
+    padding: $padding-default;
+    background-color: $white-default;
+    box-sizing: border-box;
+    transition: width 0.3s ease 0s;
+  }
+
+  @media (min-width: $layout-breakpoint-medium) {
+    width: 27rem;
+  }
 }
 
 

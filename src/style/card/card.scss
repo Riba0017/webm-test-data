@@ -4,15 +4,22 @@
 @import "_title";
 @import "_list";
 @import "_feature";
+@import "_info";
 
 .card {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1.6rem;
-  padding: $padding-default;
-  background-color: $white-default;
+  @media (min-width: $layout-breakpoint-small) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.6rem;
+    padding: $padding-default;
+    background-color: $white-default;
+  }
+
+  @media (min-width: $layout-breakpoint-900) {
+    flex-flow: row wrap;
+  }
 }
 
 

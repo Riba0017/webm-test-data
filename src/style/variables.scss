@@ -13,6 +13,12 @@ $red-error: rgba(235, 87, 87, 1);
 $orange-warning: rgba(242, 153, 74, 1);
 $shadow-default: rgba(0, 0, 0, 0.25);
 
-// variables
-
+// sizes
 $padding-default: 1.6rem;
+
+// breakpoints
+$layout-breakpoint-small: 400px;
+$layout-breakpoint-medium: 768px;
+$layout-breakpoint-900: 900px;
+$layout-breakpoint-default: 1024px;
+$layout-breakpoint-large: 1200px;

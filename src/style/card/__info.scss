@@ -1,13 +1,10 @@
 @import "../variables";
 
-.card__content {
+.card__info {
   @media (min-width: $layout-breakpoint-small) {
-    flex: 1 1 100%;
-    text-align: left;
     padding-top: 2rem;
   }
-  @media (min-width: $layout-breakpoint-900) {
-    max-width: 60%;
+  @media (min-width: $layout-breakpoint-large) {
     padding-top: 0;
   }
 }

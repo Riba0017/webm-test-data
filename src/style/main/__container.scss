@@ -1,12 +1,19 @@
 @import "../variables";
 
 .main__container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 114rem;
-  margin: 0 auto;
-  padding: 0 $padding-default;
-  box-sizing: border-box;
+  @media (min-width: $layout-breakpoint-small) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 $padding-default;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $layout-breakpoint-medium) {
+    flex-flow: row wrap;
+  }
+
 }

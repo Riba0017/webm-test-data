@@ -1,6 +1,13 @@
+@import "../variables";
 
 .catalog {
-  flex: 1 0 auto;
-  min-height: 5rem;
-  max-width: calc(100% - 29rem);
+  @media (min-width: $layout-breakpoint-small) {
+    flex: 1 0 auto;
+    min-height: 5rem;
+
+  }
+
+  @media (min-width: $layout-breakpoint-medium) {
+    max-width: calc(100% - 29rem);
+  }
 }
