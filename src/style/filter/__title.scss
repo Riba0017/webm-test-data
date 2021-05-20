@@ -1,0 +1,9 @@
+@import "../variables";
+
+.filter__title {
+  margin: 0;
+  padding-bottom: $padding-default;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-bottom: 1px solid $black-default;
+}

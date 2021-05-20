@@ -1,0 +1,14 @@
+@import "../variables";
+
+.filter__par-min,
+.filter__par-max {
+  max-width: 11rem;
+  height: 3.6rem;
+  margin-top: 1rem;
+  border: 1px solid $border-default;
+  box-sizing: border-box;
+}
+
+.filter__par-min {
+  margin-right: 1rem;
+}

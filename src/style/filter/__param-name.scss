@@ -1,0 +1,29 @@
+@import "../variables";
+
+.filter__param-name {
+  position: relative;
+  margin-top: 1.6rem;
+  list-style: none;
+  cursor: pointer;
+  &::marker {
+    display: none;
+  }
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+
+    width: 10px;
+    height: 1px;
+    background-color: $black-default;
+  }
+  &::before {
+    right: 8px;
+    transform: rotate(40deg);
+  }
+  &::after {
+    right: 0;
+    transform: rotate(-40deg);
+  }
+}

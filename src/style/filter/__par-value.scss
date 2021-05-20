@@ -1,0 +1,50 @@
+@import "../variables";
+
+.filter__par-value {
+  position: relative;
+  display: flex;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1rem;
+    border: 1px solid $link-default;
+  }
+  &--radio::before {
+    border-radius: 5rem;
+  }
+}
+
+input[type="checkbox"]:checked + .filter__par-value::before {
+  background-color: $link-default;
+  transition: all 0.3s ease 0s;
+}
+
+input[type="checkbox"]:checked + .filter__par-value::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  display: inline-block;
+  width: 0.5rem;
+  height: 1rem;
+  border-bottom: 1px solid $white-default;
+  border-right: 1px solid $white-default;
+  transform: rotate(40deg);
+}
+
+input[type="radio"]:checked + .filter__par-value::before {
+  transition: all 0.3s ease 0s;
+}
+
+input[type="radio"]:checked + .filter__par-value::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50px;
+  background-color: $link-default;
+}

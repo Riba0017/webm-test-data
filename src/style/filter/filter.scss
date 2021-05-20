@@ -1,7 +1,26 @@
+@import "../variables";
+@import "_title";
+@import "_param";
+@import "_param-name";
+@import "_par";
+@import "_par-value";
+@import "_par-min";
+@import "_text";
+@import "_button";
 
 .filter {
   width: 27rem;
-  height: 59rem;
+  height: auto;
   margin-right: 2rem;
-  background-color: lightcoral;
+  padding: $padding-default;
+  background-color: $white-default;
+  box-sizing: border-box;
 }
+
+
+
+
+
+
+
+

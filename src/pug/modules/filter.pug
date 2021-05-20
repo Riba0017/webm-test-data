@@ -1,3 +1,32 @@
+mixin checkbox(value)
+    label.filter__par
+        input(type='checkbox' name= value)
+        span.filter__par-value.filter__par-value--checkbox #{value}
+
+mixin radio(val)
+    label.filter__par
+        input(type='radio' name='filter' value= val)
+        span.filter__par-value.filter__par-value--radio #{val}
 
 div.filter
-    .filter__container
+    h3.filter__title Results Found
+    details.filter__param.filter__param--flex(open)
+        summary.filter__param-name Param 1
+        +checkbox('value 1')
+        +checkbox('value 2')
+        +checkbox('value 3')
+        +checkbox('value 4')
+        +checkbox('value 5')
+    details.filter__param.filter__param--flex(open)
+        summary.filter__param-name Param 2
+        +radio('value_2_1')
+        +radio('value_2_2')
+        +radio('value_2_3')
+    details.filter__param(open)
+        summary.filter__param-name Param 2
+        input(type='number' placeholder='min' class='filter__par-min')
+        input(type='number' placeholder='max' class='filter__par-max')
+    details.filter__param(open)
+        summary.filter__param-name Param 2
+        input(type='text' placeholder='Keyword' class='filter__par-text')
+    input(type='submit' value='search' class='filter__button')
